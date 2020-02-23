@@ -1,0 +1,1 @@
+echo -n "ESXi Install Date: "; date -d @$(printf "%d" 0x$(esxcli system uuid get | cut -d \--f1 ))
