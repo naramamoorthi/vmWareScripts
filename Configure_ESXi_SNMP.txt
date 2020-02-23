@@ -1,0 +1,8 @@
+This string of commands sets the following parameters and then lists the configured settings.
+1. Enables SNMP
+2. Community String
+3. Port
+4. Locale
+5. Email
+
+esxcli system snmp set -r; esxcli system snmp set -c <Community String>;esxcli system snmp set -p <port eg. 161>;esxcli system snmp set -L "Locale Setting. e.g. Australia,Melbourne";esxcli snmp set -C <SupportContactEmail e.g. support@techsupport.com;esxcli system snmp set -e yes;esxcli system snmp get
