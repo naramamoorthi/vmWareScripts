@@ -1,0 +1,26 @@
+Check Logs:
+ls /var/logs
+
+Check Log Retention:
+esxcli system syslog config get
+#Values: Message Queue Drop Mark (90), Local Logging Default Rotations (8), Local Logging Default Rotation Size
+
+List vSwitch:
+esxcli network vswitch standard list
+
+Check vSwitch Security:
+esxcli network vswitch standard policy security get -v vSwitch0
+esxcli network vswitch standard policy security get -v vSwitch1
+
+Get Network IP Configuration:
+esxcli network ip interface ipv4 get
+
+List DNS Servers:
+esxcli network ip dns server list
+
+List Firewall Rules:
+esxcli network firewall get
+esxcli network firewall ruleset list
+
+List NTP Servers:
+cat /etc/ntp.conf
